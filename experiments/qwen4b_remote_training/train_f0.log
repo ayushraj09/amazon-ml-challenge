@@ -1,0 +1,139 @@
+W0927 09:18:40.566000 27274 torch/distributed/run.py:851] 
+W0927 09:18:40.566000 27274 torch/distributed/run.py:851] *****************************************
+W0927 09:18:40.566000 27274 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0927 09:18:40.566000 27274 torch/distributed/run.py:851] *****************************************
+[xenc] training pool: uncertain 3,982,734 near-miss-like 507,181 synthetic 91,342
+[xenc] training pool: uncertain 3,982,734 near-miss-like 507,181 synthetic 91,342
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 5480.61it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 7362.06it/s]
+[xenc f0] format augmentation p=0.5
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[xenc f0] step 100/11000 (0.9%) loss 4.3668 lr 1.82e-05 1.233s/step elapsed 2.1m eta 224.0m peak_mem 11.6G
+[xenc f0] step 200/11000 (1.8%) loss 2.3428 lr 3.64e-05 1.227s/step elapsed 4.1m eta 220.9m peak_mem 11.6G
+[xenc f0] step 300/11000 (2.7%) loss 1.9521 lr 5.45e-05 1.220s/step elapsed 6.1m eta 217.6m peak_mem 11.6G
+[xenc f0] step 400/11000 (3.6%) loss 1.5859 lr 7.27e-05 1.218s/step elapsed 8.1m eta 215.2m peak_mem 11.6G
+[xenc f0] step 500/11000 (4.5%) loss 1.3925 lr 9.09e-05 1.219s/step elapsed 10.2m eta 213.3m peak_mem 11.6G
+[xenc f0] step 600/11000 (5.5%) loss 1.1660 lr 1.09e-04 1.220s/step elapsed 12.2m eta 211.6m peak_mem 11.6G
+[xenc f0] step 700/11000 (6.4%) loss 1.1092 lr 1.27e-04 1.221s/step elapsed 14.2m eta 209.6m peak_mem 11.6G
+[xenc f0] step 800/11000 (7.3%) loss 0.9888 lr 1.45e-04 1.219s/step elapsed 16.3m eta 207.3m peak_mem 11.6G
+[xenc f0] step 900/11000 (8.2%) loss 0.9621 lr 1.64e-04 1.214s/step elapsed 18.2m eta 204.4m peak_mem 11.6G
+[xenc f0] step 1000/11000 (9.1%) loss 0.8702 lr 1.82e-04 1.214s/step elapsed 20.2m eta 202.3m peak_mem 11.6G
+[xenc f0] step 1000: dev AP 0.991826 (best -1.000000)
+[xenc f0] step 1100/11000 (10.0%) loss 0.8844 lr 2.00e-04 1.256s/step elapsed 23.0m eta 207.3m peak_mem 14.0G
+[xenc f0] step 1200/11000 (10.9%) loss 0.8650 lr 1.98e-04 1.254s/step elapsed 25.1m eta 204.8m peak_mem 14.0G
+[xenc f0] step 1300/11000 (11.8%) loss 0.7336 lr 1.96e-04 1.249s/step elapsed 27.1m eta 202.0m peak_mem 14.0G
+[xenc f0] step 1400/11000 (12.7%) loss 0.7171 lr 1.94e-04 1.247s/step elapsed 29.1m eta 199.6m peak_mem 14.0G
+[xenc f0] step 1500/11000 (13.6%) loss 0.5844 lr 1.92e-04 1.244s/step elapsed 31.1m eta 197.0m peak_mem 14.0G
+[xenc f0] step 1600/11000 (14.5%) loss 0.6435 lr 1.90e-04 1.242s/step elapsed 33.1m eta 194.5m peak_mem 14.0G
+[xenc f0] step 1700/11000 (15.5%) loss 0.5789 lr 1.88e-04 1.241s/step elapsed 35.2m eta 192.4m peak_mem 14.0G
+[xenc f0] step 1800/11000 (16.4%) loss 0.5684 lr 1.86e-04 1.239s/step elapsed 37.2m eta 190.1m peak_mem 14.0G
+[xenc f0] step 1900/11000 (17.3%) loss 0.5597 lr 1.84e-04 1.238s/step elapsed 39.2m eta 187.7m peak_mem 14.0G
+[xenc f0] step 2000/11000 (18.2%) loss 0.5620 lr 1.82e-04 1.236s/step elapsed 41.2m eta 185.4m peak_mem 14.0G
+[xenc f0] step 2000: dev AP 0.994382 (best 0.991826)
+[xenc f0] step 2100/11000 (19.1%) loss 0.4843 lr 1.80e-04 1.257s/step elapsed 44.0m eta 186.5m peak_mem 14.0G
+[xenc f0] step 2200/11000 (20.0%) loss 0.5223 lr 1.78e-04 1.254s/step elapsed 46.0m eta 184.0m peak_mem 14.0G
+[xenc f0] step 2300/11000 (20.9%) loss 0.4674 lr 1.76e-04 1.253s/step elapsed 48.0m eta 181.6m peak_mem 14.0G
+[xenc f0] step 2400/11000 (21.8%) loss 0.4344 lr 1.74e-04 1.251s/step elapsed 50.0m eta 179.3m peak_mem 14.0G
+[xenc f0] step 2500/11000 (22.7%) loss 0.4465 lr 1.72e-04 1.249s/step elapsed 52.1m eta 177.0m peak_mem 14.0G
+[xenc f0] step 2600/11000 (23.6%) loss 0.4750 lr 1.70e-04 1.248s/step elapsed 54.1m eta 174.8m peak_mem 14.0G
+[xenc f0] step 2700/11000 (24.5%) loss 0.4253 lr 1.68e-04 1.249s/step elapsed 56.2m eta 172.8m peak_mem 14.0G
+[xenc f0] step 2800/11000 (25.5%) loss 0.4139 lr 1.66e-04 1.248s/step elapsed 58.2m eta 170.5m peak_mem 14.0G
+[xenc f0] step 2900/11000 (26.4%) loss 0.4384 lr 1.64e-04 1.247s/step elapsed 60.3m eta 168.4m peak_mem 14.0G
+[xenc f0] step 3000/11000 (27.3%) loss 0.4323 lr 1.62e-04 1.246s/step elapsed 62.3m eta 166.2m peak_mem 14.0G
+[xenc f0] step 3000: dev AP 0.995738 (best 0.994382)
+[xenc f0] step 3100/11000 (28.2%) loss 0.3917 lr 1.60e-04 1.260s/step elapsed 65.1m eta 166.0m peak_mem 14.0G
+[xenc f0] step 3200/11000 (29.1%) loss 0.3762 lr 1.58e-04 1.259s/step elapsed 67.1m eta 163.6m peak_mem 14.0G
+[xenc f0] step 3300/11000 (30.0%) loss 0.3688 lr 1.56e-04 1.257s/step elapsed 69.2m eta 161.4m peak_mem 14.0G
+[xenc f0] step 3400/11000 (30.9%) loss 0.3679 lr 1.54e-04 1.257s/step elapsed 71.2m eta 159.2m peak_mem 14.0G
+[xenc f0] step 3500/11000 (31.8%) loss 0.4250 lr 1.52e-04 1.256s/step elapsed 73.3m eta 157.0m peak_mem 14.0G
+[xenc f0] step 3600/11000 (32.7%) loss 0.3461 lr 1.49e-04 1.256s/step elapsed 75.3m eta 154.9m peak_mem 14.0G
+[xenc f0] step 3700/11000 (33.6%) loss 0.3694 lr 1.47e-04 1.255s/step elapsed 77.4m eta 152.7m peak_mem 14.0G
+[xenc f0] step 3800/11000 (34.5%) loss 0.3694 lr 1.45e-04 1.254s/step elapsed 79.4m eta 150.5m peak_mem 14.0G
+[xenc f0] step 3900/11000 (35.5%) loss 0.3844 lr 1.43e-04 1.254s/step elapsed 81.5m eta 148.3m peak_mem 14.0G
+[xenc f0] step 4000/11000 (36.4%) loss 0.3534 lr 1.41e-04 1.252s/step elapsed 83.5m eta 146.1m peak_mem 14.0G
+[xenc f0] step 4000: dev AP 0.997215 (best 0.995738)
+[xenc f0] step 4100/11000 (37.3%) loss 0.3786 lr 1.39e-04 1.264s/step elapsed 86.4m eta 145.3m peak_mem 14.0G
+[xenc f0] step 4200/11000 (38.2%) loss 0.3319 lr 1.37e-04 1.263s/step elapsed 88.4m eta 143.1m peak_mem 14.0G
+[xenc f0] step 4300/11000 (39.1%) loss 0.3704 lr 1.35e-04 1.261s/step elapsed 90.4m eta 140.8m peak_mem 14.0G
+[xenc f0] step 4400/11000 (40.0%) loss 0.3707 lr 1.33e-04 1.260s/step elapsed 92.4m eta 138.6m peak_mem 14.0G
+[xenc f0] step 4500/11000 (40.9%) loss 0.3188 lr 1.31e-04 1.259s/step elapsed 94.4m eta 136.4m peak_mem 14.0G
+[xenc f0] step 4600/11000 (41.8%) loss 0.3662 lr 1.29e-04 1.257s/step elapsed 96.4m eta 134.1m peak_mem 14.0G
+[xenc f0] step 4700/11000 (42.7%) loss 0.3473 lr 1.27e-04 1.256s/step elapsed 98.4m eta 131.9m peak_mem 14.0G
+[xenc f0] step 4800/11000 (43.6%) loss 0.3242 lr 1.25e-04 1.255s/step elapsed 100.4m eta 129.7m peak_mem 14.0G
+[xenc f0] step 4900/11000 (44.5%) loss 0.3567 lr 1.23e-04 1.254s/step elapsed 102.4m eta 127.5m peak_mem 14.0G
+[xenc f0] step 5000/11000 (45.5%) loss 0.3103 lr 1.21e-04 1.253s/step elapsed 104.4m eta 125.3m peak_mem 14.0G
+[xenc f0] step 5000: dev AP 0.997691 (best 0.997215)
+[xenc f0] step 5100/11000 (46.4%) loss 0.3679 lr 1.19e-04 1.262s/step elapsed 107.3m eta 124.1m peak_mem 14.0G
+[xenc f0] step 5200/11000 (47.3%) loss 0.3641 lr 1.17e-04 1.262s/step elapsed 109.4m eta 122.0m peak_mem 14.0G
+[xenc f0] step 5300/11000 (48.2%) loss 0.3372 lr 1.15e-04 1.261s/step elapsed 111.4m eta 119.8m peak_mem 14.0G
+[xenc f0] step 5400/11000 (49.1%) loss 0.3075 lr 1.13e-04 1.261s/step elapsed 113.4m eta 117.6m peak_mem 14.0G
+[xenc f0] step 5500/11000 (50.0%) loss 0.3155 lr 1.11e-04 1.260s/step elapsed 115.5m eta 115.5m peak_mem 14.0G
+[xenc f0] step 5600/11000 (50.9%) loss 0.3330 lr 1.09e-04 1.259s/step elapsed 117.5m eta 113.3m peak_mem 14.0G
+[xenc f0] step 5700/11000 (51.8%) loss 0.3566 lr 1.07e-04 1.258s/step elapsed 119.5m eta 111.1m peak_mem 14.0G
+[xenc f0] step 5800/11000 (52.7%) loss 0.3110 lr 1.05e-04 1.258s/step elapsed 121.6m eta 109.0m peak_mem 14.0G
+[xenc f0] step 5900/11000 (53.6%) loss 0.3012 lr 1.03e-04 1.258s/step elapsed 123.7m eta 106.9m peak_mem 14.0G
+[xenc f0] step 6000/11000 (54.5%) loss 0.3320 lr 1.01e-04 1.257s/step elapsed 125.7m eta 104.8m peak_mem 14.0G
+[xenc f0] step 6000: dev AP 0.998281 (best 0.997691)
+[xenc f0] step 6100/11000 (55.5%) loss 0.2673 lr 9.90e-05 1.264s/step elapsed 128.5m eta 103.3m peak_mem 14.0G
+[xenc f0] step 6200/11000 (56.4%) loss 0.3026 lr 9.70e-05 1.264s/step elapsed 130.6m eta 101.1m peak_mem 14.0G
+[xenc f0] step 6300/11000 (57.3%) loss 0.3191 lr 9.49e-05 1.263s/step elapsed 132.6m eta 98.9m peak_mem 14.0G
+[xenc f0] step 6400/11000 (58.2%) loss 0.3068 lr 9.29e-05 1.262s/step elapsed 134.6m eta 96.8m peak_mem 14.0G
+[xenc f0] step 6500/11000 (59.1%) loss 0.2877 lr 9.09e-05 1.261s/step elapsed 136.6m eta 94.6m peak_mem 14.0G
+[xenc f0] step 6600/11000 (60.0%) loss 0.3014 lr 8.89e-05 1.260s/step elapsed 138.6m eta 92.4m peak_mem 14.0G
+[xenc f0] step 6700/11000 (60.9%) loss 0.3258 lr 8.69e-05 1.260s/step elapsed 140.7m eta 90.3m peak_mem 14.0G
+[xenc f0] step 6800/11000 (61.8%) loss 0.2861 lr 8.48e-05 1.260s/step elapsed 142.8m eta 88.2m peak_mem 14.0G
+[xenc f0] step 6900/11000 (62.7%) loss 0.2880 lr 8.28e-05 1.259s/step elapsed 144.8m eta 86.1m peak_mem 14.0G
+[xenc f0] step 7000/11000 (63.6%) loss 0.2852 lr 8.08e-05 1.259s/step elapsed 146.9m eta 83.9m peak_mem 14.0G
+[xenc f0] step 7000: dev AP 0.998001 (best 0.998281)
+[xenc f0] step 7100/11000 (64.5%) loss 0.3106 lr 7.88e-05 1.264s/step elapsed 149.6m eta 82.2m peak_mem 14.0G
+[xenc f0] step 7200/11000 (65.5%) loss 0.2891 lr 7.68e-05 1.264s/step elapsed 151.6m eta 80.0m peak_mem 14.0G
+[xenc f0] step 7300/11000 (66.4%) loss 0.2730 lr 7.47e-05 1.264s/step elapsed 153.8m eta 77.9m peak_mem 14.0G
+[xenc f0] step 7400/11000 (67.3%) loss 0.2815 lr 7.27e-05 1.263s/step elapsed 155.8m eta 75.8m peak_mem 14.0G
+[xenc f0] step 7500/11000 (68.2%) loss 0.2454 lr 7.07e-05 1.262s/step elapsed 157.8m eta 73.6m peak_mem 14.0G
+[xenc f0] step 7600/11000 (69.1%) loss 0.2567 lr 6.87e-05 1.262s/step elapsed 159.8m eta 71.5m peak_mem 14.0G
+[xenc f0] step 7700/11000 (70.0%) loss 0.2893 lr 6.67e-05 1.261s/step elapsed 161.9m eta 69.4m peak_mem 14.0G
+[xenc f0] step 7800/11000 (70.9%) loss 0.2737 lr 6.46e-05 1.261s/step elapsed 163.9m eta 67.3m peak_mem 14.0G
+[xenc f0] step 7900/11000 (71.8%) loss 0.2905 lr 6.26e-05 1.260s/step elapsed 166.0m eta 65.1m peak_mem 14.0G
+[xenc f0] step 8000/11000 (72.7%) loss 0.2803 lr 6.06e-05 1.260s/step elapsed 168.0m eta 63.0m peak_mem 14.0G
+[xenc f0] step 8000: dev AP 0.998146 (best 0.998281)
+[xenc f0] step 8100/11000 (73.6%) loss 0.2712 lr 5.86e-05 1.265s/step elapsed 170.8m eta 61.1m peak_mem 14.0G
+[xenc f0] step 8200/11000 (74.5%) loss 0.2580 lr 5.66e-05 1.264s/step elapsed 172.8m eta 59.0m peak_mem 14.0G
+[xenc f0] step 8300/11000 (75.5%) loss 0.3082 lr 5.45e-05 1.263s/step elapsed 174.8m eta 56.9m peak_mem 14.0G
+[xenc f0] step 8400/11000 (76.4%) loss 0.3108 lr 5.25e-05 1.263s/step elapsed 176.8m eta 54.7m peak_mem 14.0G
+[xenc f0] step 8500/11000 (77.3%) loss 0.2811 lr 5.05e-05 1.263s/step elapsed 178.9m eta 52.6m peak_mem 14.0G
+[xenc f0] step 8600/11000 (78.2%) loss 0.2335 lr 4.85e-05 1.262s/step elapsed 181.0m eta 50.5m peak_mem 14.0G
+[xenc f0] step 8700/11000 (79.1%) loss 0.2588 lr 4.65e-05 1.262s/step elapsed 183.0m eta 48.4m peak_mem 14.0G
+[xenc f0] step 8800/11000 (80.0%) loss 0.2655 lr 4.44e-05 1.262s/step elapsed 185.1m eta 46.3m peak_mem 14.0G
+[xenc f0] step 8900/11000 (80.9%) loss 0.2681 lr 4.24e-05 1.262s/step elapsed 187.1m eta 44.2m peak_mem 14.0G
+[xenc f0] step 9000/11000 (81.8%) loss 0.2334 lr 4.04e-05 1.261s/step elapsed 189.1m eta 42.0m peak_mem 14.0G
+[xenc f0] step 9000: dev AP 0.998311 (best 0.998281)
+[xenc f0] step 9100/11000 (82.7%) loss 0.2903 lr 3.84e-05 1.266s/step elapsed 192.0m eta 40.1m peak_mem 14.0G
+[xenc f0] step 9200/11000 (83.6%) loss 0.2338 lr 3.64e-05 1.265s/step elapsed 194.0m eta 38.0m peak_mem 14.0G
+[xenc f0] step 9300/11000 (84.5%) loss 0.2936 lr 3.43e-05 1.265s/step elapsed 196.0m eta 35.8m peak_mem 14.0G
+[xenc f0] step 9400/11000 (85.5%) loss 0.2817 lr 3.23e-05 1.264s/step elapsed 198.1m eta 33.7m peak_mem 14.0G
+[xenc f0] step 9500/11000 (86.4%) loss 0.2244 lr 3.03e-05 1.264s/step elapsed 200.1m eta 31.6m peak_mem 14.0G
+[xenc f0] step 9600/11000 (87.3%) loss 0.2967 lr 2.83e-05 1.263s/step elapsed 202.2m eta 29.5m peak_mem 14.0G
+[xenc f0] step 9700/11000 (88.2%) loss 0.2506 lr 2.63e-05 1.263s/step elapsed 204.2m eta 27.4m peak_mem 14.0G
+[xenc f0] step 9800/11000 (89.1%) loss 0.2557 lr 2.42e-05 1.263s/step elapsed 206.2m eta 25.3m peak_mem 14.0G
+[xenc f0] step 9900/11000 (90.0%) loss 0.2603 lr 2.22e-05 1.262s/step elapsed 208.2m eta 23.1m peak_mem 14.0G
+[xenc f0] step 10000/11000 (90.9%) loss 0.2448 lr 2.02e-05 1.262s/step elapsed 210.3m eta 21.0m peak_mem 14.0G
+[xenc f0] step 10000: dev AP 0.998441 (best 0.998311)
+[xenc f0] step 10100/11000 (91.8%) loss 0.2360 lr 1.82e-05 1.266s/step elapsed 213.1m eta 19.0m peak_mem 14.0G
+[xenc f0] step 10200/11000 (92.7%) loss 0.2581 lr 1.62e-05 1.266s/step elapsed 215.2m eta 16.9m peak_mem 14.0G
+[xenc f0] step 10300/11000 (93.6%) loss 0.2501 lr 1.41e-05 1.265s/step elapsed 217.2m eta 14.8m peak_mem 14.0G
+[xenc f0] step 10400/11000 (94.5%) loss 0.2509 lr 1.21e-05 1.265s/step elapsed 219.2m eta 12.6m peak_mem 14.0G
+[xenc f0] step 10500/11000 (95.5%) loss 0.2391 lr 1.01e-05 1.264s/step elapsed 221.3m eta 10.5m peak_mem 14.0G
+[xenc f0] step 10600/11000 (96.4%) loss 0.2232 lr 8.08e-06 1.264s/step elapsed 223.3m eta 8.4m peak_mem 14.0G
+[xenc f0] step 10700/11000 (97.3%) loss 0.2286 lr 6.06e-06 1.264s/step elapsed 225.3m eta 6.3m peak_mem 14.0G
+[xenc f0] step 10800/11000 (98.2%) loss 0.2348 lr 4.04e-06 1.263s/step elapsed 227.3m eta 4.2m peak_mem 14.0G
+[xenc f0] step 10900/11000 (99.1%) loss 0.2310 lr 2.02e-06 1.263s/step elapsed 229.4m eta 2.1m peak_mem 14.0G
+[xenc f0] step 11000/11000 (100.0%) loss 0.2763 lr 0.00e+00 1.262s/step elapsed 231.4m eta 0.0m peak_mem 14.0G
+[xenc f0] step 11000: dev AP 0.998505 (best 0.998441)
+/workspace/MLC/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[xenc] fold 0: trained on 352,000 records
+[xenc] fold 0: trained on 352,000 records
+[rank0]:[W927 13:11:22.672450800 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())

@@ -1,0 +1,65 @@
+run started: 2026-09-27 14:48:34 IST
+layout: 2 folds, fold 0 on GPUs 0,1 (torchrun port 29501), fold 1 on GPUs 2,3 (port 29502)
+records per fold: 352000 | records per step: 32 (16 per GPU) | steps per fold: 11000 | epochs: 1
+dev eval every 1000 steps on 3000 uncertain records of the other fold; patience 5; best checkpoint kept
+backbone: Qwen/Qwen3-4B revision 1cfa9a7208912126459214e8b04321603b3df60c
+LoRA r64 alpha16 dropout0.1 all-linear, bf16, grad checkpointing, lr 2e-4 linear warmup 0.1, format aug p=0.5
+--- env
+CUDA_HOME=/usr/local/cuda
+CUDA_VERSION=12.8.1
+ER_WORK_DIR=/workspace/MLC/work_qwen4b
+ER_XENC_AUG=0.5
+ER_XENC_BACKBONE=Qwen/Qwen3-4B
+ER_XENC_FOLDS=2
+ER_XENC_GPU_FRACTION=0.95
+ER_XENC_LOG_EVERY=100
+ER_XENC_MAX_RECORDS=352000
+ER_XENC_SCORE_BS=128
+PYTORCH_BACKEND=cu128
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+PYTORCH_VERSION=2.11.0
+--- packages
+accelerate               1.15.0
+huggingface_hub          1.33.0
+lightgbm                 4.7.0
+numba                    0.67.0
+numpy                    2.4.6
+peft                     0.21.0
+polars                   1.44.2
+pyarrow                  25.0.1
+safetensors              0.8.0
+scikit-learn             1.9.1
+scipy                    1.17.1
+tokenizers               0.23.2
+torch                    2.11.0+cu128
+transformers             5.17.0
+xgboost                  3.2.0
+--- code md5
+8a5a4403d023f4c5df6973de79b34575  src/cross_encoder.py
+5bc7f9730638aa2a83f4744184fd1288  src/xenc.py
+--- input md5
+961271b92a5560ba5c8b917d7ad7abda  train/gt.parquet
+3541d803472a85efaa4c464d71cacb75  train/pairs_feat.parquet
+adc2f8a061a81c114714d229e36f8c3d  train/pruned.parquet
+76f5ec35f39af8bbdd7419646479d44e  train/records.parquet
+0cc42981c7d9ba9f0a6554b69114e3c6  test/pred_stage2.parquet
+e5c02cc695afe04bab2d55cd04b9cc6d  test/pred_stage2_tr.parquet
+4117a0fc6531c2c5c1dc97a58366954c  test/pruned.parquet
+7cf6a88692229e37b4ba25aea3475e6d  test/records.parquet
+b72e67456cd9032e3a13a06288b01a0b  oof_stage2.npy
+--- GPUs
+0, NVIDIA RTX PRO 4000 Blackwell, 24467 MiB, 595.91.07
+1, NVIDIA RTX PRO 4000 Blackwell, 24467 MiB, 595.91.07
+2, NVIDIA RTX PRO 4000 Blackwell, 24467 MiB, 595.91.07
+3, NVIDIA RTX PRO 4000 Blackwell, 24467 MiB, 595.91.07
+launched at 14:48:39 IST
+
+=== 2026-09-27 16:46:54 IST fold 1 RESTART: run 1 diverged after warmup peak (step ~1300, dev AP 0.990 -> 0.716); log archived as train_f1_run1_diverged.log
+    resumed from its own step-1000 checkpoint (dev AP 0.990258; backup xenc_fold1_step1000_backup.pt), same 352k record order, records 32,000+ (steps 1000-11000)
+    ER_XENC_START_STEP=1000 ER_XENC_LR=1e-4 (fresh 10% warmup over 10,000 steps); checkpoint only overwritten when dev AP > 0.990258
+    code md5: 60870d57ffe7ea57508fb44a051e1ea0 src/cross_encoder.py
+
+=== 2026-09-27 18:42:15 IST fold 0 DONE: 352,000 records, 11,000 steps, best dev AP 0.998505 (step 11000); checkpoint md5 fea56d7788c572b6fe229358cdcca5ee
+    model 0 scoring started: score_fold(0, shard, 2) on GPU 0 (shard 0) and GPU 1 (shard 1), ER_XENC_SCORE_BS=128, logs score_f0_{0,1}.log
+c172d8d000bb282b63fc6081597ff0db  train/xenc.parquet
+d6ce5a6a4ec5fa78a7aa69631402ef01  test/xenc.parquet

@@ -1,0 +1,103 @@
+W0927 09:18:40.612000 27275 torch/distributed/run.py:851] 
+W0927 09:18:40.612000 27275 torch/distributed/run.py:851] *****************************************
+W0927 09:18:40.612000 27275 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0927 09:18:40.612000 27275 torch/distributed/run.py:851] *****************************************
+[xenc] training pool: uncertain 3,982,734 near-miss-like 507,181 synthetic 91,342
+[xenc] training pool: uncertain 3,982,734 near-miss-like 507,181 synthetic 91,342
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 8085.15it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 8529.63it/s]
+[xenc f1] format augmentation p=0.5
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[xenc f1] step 100/11000 (0.9%) loss 4.3249 lr 1.82e-05 1.234s/step elapsed 2.1m eta 224.2m peak_mem 11.5G
+[xenc f1] step 200/11000 (1.8%) loss 2.4048 lr 3.64e-05 1.215s/step elapsed 4.0m eta 218.7m peak_mem 11.5G
+[xenc f1] step 300/11000 (2.7%) loss 1.9707 lr 5.45e-05 1.210s/step elapsed 6.1m eta 215.8m peak_mem 11.5G
+[xenc f1] step 400/11000 (3.6%) loss 1.5789 lr 7.27e-05 1.195s/step elapsed 8.0m eta 211.2m peak_mem 11.5G
+[xenc f1] step 500/11000 (4.5%) loss 1.2921 lr 9.09e-05 1.200s/step elapsed 10.0m eta 210.0m peak_mem 11.5G
+[xenc f1] step 600/11000 (5.5%) loss 1.1689 lr 1.09e-04 1.196s/step elapsed 12.0m eta 207.3m peak_mem 11.5G
+[xenc f1] step 700/11000 (6.4%) loss 1.0161 lr 1.27e-04 1.196s/step elapsed 14.0m eta 205.3m peak_mem 11.5G
+[xenc f1] step 800/11000 (7.3%) loss 0.9598 lr 1.45e-04 1.202s/step elapsed 16.0m eta 204.3m peak_mem 11.5G
+[xenc f1] step 900/11000 (8.2%) loss 0.9454 lr 1.64e-04 1.200s/step elapsed 18.0m eta 201.9m peak_mem 11.5G
+[xenc f1] step 1000/11000 (9.1%) loss 0.8323 lr 1.82e-04 1.194s/step elapsed 19.9m eta 199.0m peak_mem 11.5G
+[xenc f1] step 1000: dev AP 0.990258 (best -1.000000)
+[xenc f1] step 1100/11000 (10.0%) loss 0.7762 lr 2.00e-04 1.239s/step elapsed 22.7m eta 204.4m peak_mem 13.9G
+[xenc f1] step 1200/11000 (10.9%) loss 0.8185 lr 1.98e-04 1.232s/step elapsed 24.6m eta 201.2m peak_mem 13.9G
+[xenc f1] step 1300/11000 (11.8%) loss 0.7579 lr 1.96e-04 1.233s/step elapsed 26.7m eta 199.3m peak_mem 13.9G
+[xenc f1] step 1400/11000 (12.7%) loss 1.9484 lr 1.94e-04 1.229s/step elapsed 28.7m eta 196.6m peak_mem 13.9G
+[xenc f1] step 1500/11000 (13.6%) loss 3.1194 lr 1.92e-04 1.225s/step elapsed 30.6m eta 194.0m peak_mem 13.9G
+[xenc f1] step 1600/11000 (14.5%) loss 3.3046 lr 1.90e-04 1.223s/step elapsed 32.6m eta 191.7m peak_mem 13.9G
+[xenc f1] step 1700/11000 (15.5%) loss 2.4806 lr 1.88e-04 1.221s/step elapsed 34.6m eta 189.2m peak_mem 13.9G
+[xenc f1] step 1800/11000 (16.4%) loss 2.4789 lr 1.86e-04 1.218s/step elapsed 36.6m eta 186.8m peak_mem 13.9G
+[xenc f1] step 1900/11000 (17.3%) loss 3.3365 lr 1.84e-04 1.219s/step elapsed 38.6m eta 184.8m peak_mem 13.9G
+[xenc f1] step 2000/11000 (18.2%) loss 3.1385 lr 1.82e-04 1.218s/step elapsed 40.6m eta 182.8m peak_mem 13.9G
+[xenc f1] step 2000: dev AP 0.716304 (best 0.990258)
+[xenc f1] step 2100/11000 (19.1%) loss 2.9437 lr 1.80e-04 1.237s/step elapsed 43.3m eta 183.5m peak_mem 13.9G
+[xenc f1] step 2200/11000 (20.0%) loss 2.9471 lr 1.78e-04 1.236s/step elapsed 45.3m eta 181.2m peak_mem 13.9G
+[xenc f1] step 2300/11000 (20.9%) loss 2.7664 lr 1.76e-04 1.234s/step elapsed 47.3m eta 179.0m peak_mem 13.9G
+[xenc f1] step 2400/11000 (21.8%) loss 2.7295 lr 1.74e-04 1.232s/step elapsed 49.3m eta 176.6m peak_mem 13.9G
+[xenc f1] step 2500/11000 (22.7%) loss 2.6476 lr 1.72e-04 1.230s/step elapsed 51.2m eta 174.2m peak_mem 13.9G
+[xenc f1] step 2600/11000 (23.6%) loss 2.4416 lr 1.70e-04 1.229s/step elapsed 53.3m eta 172.1m peak_mem 13.9G
+[xenc f1] step 2700/11000 (24.5%) loss 2.4166 lr 1.68e-04 1.228s/step elapsed 55.3m eta 169.9m peak_mem 13.9G
+[xenc f1] step 2800/11000 (25.5%) loss 2.3386 lr 1.66e-04 1.228s/step elapsed 57.3m eta 167.9m peak_mem 13.9G
+[xenc f1] step 2900/11000 (26.4%) loss 2.2710 lr 1.64e-04 1.228s/step elapsed 59.3m eta 165.7m peak_mem 13.9G
+[xenc f1] step 3000/11000 (27.3%) loss 2.2530 lr 1.62e-04 1.229s/step elapsed 61.4m eta 163.8m peak_mem 13.9G
+[xenc f1] step 3000: dev AP 0.870503 (best 0.990258)
+[xenc f1] step 3100/11000 (28.2%) loss 2.1860 lr 1.60e-04 1.241s/step elapsed 64.1m eta 163.4m peak_mem 13.9G
+[xenc f1] step 3200/11000 (29.1%) loss 2.1688 lr 1.58e-04 1.238s/step elapsed 66.0m eta 161.0m peak_mem 13.9G
+[xenc f1] step 3300/11000 (30.0%) loss 2.1132 lr 1.56e-04 1.237s/step elapsed 68.0m eta 158.7m peak_mem 13.9G
+[xenc f1] step 3400/11000 (30.9%) loss 2.0549 lr 1.54e-04 1.235s/step elapsed 70.0m eta 156.4m peak_mem 13.9G
+[xenc f1] step 3500/11000 (31.8%) loss 1.9970 lr 1.52e-04 1.235s/step elapsed 72.0m eta 154.4m peak_mem 13.9G
+[xenc f1] step 3600/11000 (32.7%) loss 1.9931 lr 1.49e-04 1.234s/step elapsed 74.0m eta 152.1m peak_mem 13.9G
+[xenc f1] step 3700/11000 (33.6%) loss 1.9749 lr 1.47e-04 1.232s/step elapsed 76.0m eta 150.0m peak_mem 13.9G
+[xenc f1] step 3800/11000 (34.5%) loss 1.8288 lr 1.45e-04 1.232s/step elapsed 78.0m eta 147.9m peak_mem 13.9G
+[xenc f1] step 3900/11000 (35.5%) loss 1.8631 lr 1.43e-04 1.231s/step elapsed 80.0m eta 145.7m peak_mem 13.9G
+[xenc f1] step 4000/11000 (36.4%) loss 1.8024 lr 1.41e-04 1.230s/step elapsed 82.0m eta 143.5m peak_mem 13.9G
+[xenc f1] step 4000: dev AP 0.916123 (best 0.990258)
+[xenc f1] step 4100/11000 (37.3%) loss 1.7127 lr 1.39e-04 1.239s/step elapsed 84.7m eta 142.5m peak_mem 13.9G
+[xenc f1] step 4200/11000 (38.2%) loss 1.7501 lr 1.37e-04 1.238s/step elapsed 86.6m eta 140.3m peak_mem 13.9G
+[xenc f1] step 4300/11000 (39.1%) loss 1.7779 lr 1.35e-04 1.237s/step elapsed 88.7m eta 138.2m peak_mem 13.9G
+[xenc f1] step 4400/11000 (40.0%) loss 1.6908 lr 1.33e-04 1.236s/step elapsed 90.6m eta 136.0m peak_mem 13.9G
+[xenc f1] step 4500/11000 (40.9%) loss 1.6942 lr 1.31e-04 1.235s/step elapsed 92.6m eta 133.8m peak_mem 13.9G
+[xenc f1] step 4600/11000 (41.8%) loss 1.5862 lr 1.29e-04 1.234s/step elapsed 94.6m eta 131.7m peak_mem 13.9G
+[xenc f1] step 4700/11000 (42.7%) loss 1.5644 lr 1.27e-04 1.233s/step elapsed 96.6m eta 129.5m peak_mem 13.9G
+[xenc f1] step 4800/11000 (43.6%) loss 1.6424 lr 1.25e-04 1.232s/step elapsed 98.6m eta 127.3m peak_mem 13.9G
+[xenc f1] step 4900/11000 (44.5%) loss 1.5260 lr 1.23e-04 1.233s/step elapsed 100.7m eta 125.3m peak_mem 13.9G
+[xenc f1] step 5000/11000 (45.5%) loss 1.4281 lr 1.21e-04 1.232s/step elapsed 102.6m eta 123.2m peak_mem 13.9G
+[xenc f1] step 5000: dev AP 0.964352 (best 0.990258)
+[xenc f1] step 5100/11000 (46.4%) loss 1.3529 lr 1.19e-04 1.239s/step elapsed 105.3m eta 121.8m peak_mem 13.9G
+[xenc f1] step 5200/11000 (47.3%) loss 1.3928 lr 1.17e-04 1.238s/step elapsed 107.3m eta 119.7m peak_mem 13.9G
+[xenc f1] step 5300/11000 (48.2%) loss 1.2625 lr 1.15e-04 1.238s/step elapsed 109.3m eta 117.6m peak_mem 13.9G
+[xenc f1] step 5400/11000 (49.1%) loss 1.2342 lr 1.13e-04 1.237s/step elapsed 111.3m eta 115.4m peak_mem 13.9G
+W0927 11:11:59.025000 27275 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0927 11:11:59.026000 27275 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 27380 closing signal SIGTERM
+W0927 11:11:59.029000 27275 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 27381 closing signal SIGTERM
+Traceback (most recent call last):
+  File "/workspace/MLC/.venv/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/workspace/MLC/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/MLC/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/workspace/MLC/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/workspace/MLC/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/MLC/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 308, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/workspace/MLC/.venv/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/MLC/.venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 731, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/MLC/.venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 908, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/workspace/MLC/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 86, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 27275 got signal: 15
