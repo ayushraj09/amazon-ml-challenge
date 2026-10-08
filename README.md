@@ -2,6 +2,8 @@
 
 This is **Team Mayfair's** solution to the **Amazon ML Challenge 2026**, which finished in the **top 50 teams**. The dataset is the one Amazon provided for the challenge. It is not included in this repository; see *Data* below.
 
+📖 **Write-up:** [How We Finished Top 50 of 32,000+ Teams at the Amazon ML Challenge 2026](https://medium.com/@ayush.ttps/how-we-finished-top-50-of-32-000-teams-at-the-amazon-ml-challenge-2026-a4a28f9e7de8) (Medium) explains the approach from scratch.
+
 This pipeline turns the raw challenge TSVs into `output/matching_results.tsv` and `output/candidate_pairs.tsv`. The method is described in [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) (PDF: [`docs/Mayfair_Methodology.pdf`](docs/Mayfair_Methodology.pdf)).
 
 **This repository contains G5, our final submission (public LB 0.990654).** To reproduce it, follow *Environment*, *Data* and *Reproduce the final submission* below.
